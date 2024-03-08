@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- RESET CSS IS BELOW HERE -->
+  <link href="css/reset.css" rel="stylesheet">
+
+  <!-- GOOGLE FONTS LINKS BELOW -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <!-- GOOGLE ICON BACKSPACE ARROW (link from "static icon font")-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- GOOGLE ICON EYEBALL (link from "static icon font")-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+  
+  <!-- FINAL/ACTUAL CSS -->
+  <link href="css/login-css.css" rel="stylesheet">
+  <title>Midterm Homepage</title>
+  <!-- you HAVE to have rel="stylesheet" when linking CSS or it won't load. 
+      Rel tells the browser what this is and priority of loading essentially -->
+</head>
+
+<!-- NOTE HTML VALIDATED  3/7 2AM -->
+
+<body>
+  <!-- SKIP LINK BELOW -->
+  <div>
+    <ul id="skipnav">
+      <li>
+        <a href="#main-content" aria-label="Skip to main content">Skip to main content</a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Login Header -->
+  <div class="loginheader" role="banner">
+
+    <header>
+      <div class="backarrow">
+        <!-- GOOGLE Arrow long backspace. Insert link is from sheets under "Inserting the icon"-->
+        <span class="material-symbols-outlined" role="presentation">keyboard_backspace</span>
+      </div>
+
+      <div class="headertext">
+      <h1>Login</h1>
+      <h3>Get started with your journey.</h3>
+      </div>
+    </header>
+  
+  </div>
+
+  <!-- Login main content -->
+  <main id="main-content" role="main">
+
+     <!-- NOTE TO SELF: HTML validator no errors for divs in form -->
+
+    <section id="login">
+      <form action="thanks.html" aria-label="login form">
+        <div class="logintop">
+          <h4>Username or Email</h4>
+          <input type="text" aria-label="Username or Email input field" placeholder="example@email.net">
+          <hr>
+          
+          <h4>Password</h4>
+          <div class="pwinput">
+            <input type="text" aria-label="Password input field" placeholder="●●●●●●●●●●●●●●●">
+            <!-- GOOGLE eyeball. Insert link is from sheets under "Inserting the icon"-->
+            <span class="material-symbols-outlined">visibility</span>
+          </div>
+          <hr>
+        </div>
+
+        <div class="pwradio">
+          <div class="radio1">
+            <input type="radio" id="radio1" value="Remember Password">
+            <label for="radio1">Remember Password</label>
+          </div>
+
+          <div class="radio2">
+            <p>Forgot Password</p>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <div class="loginbutton">
+      <a href="donation.html" aria-label="button continue to login">CONTINUE TO LOGIN</a>
+
+    </div>
+  </main>
+
+</body>
+</html>

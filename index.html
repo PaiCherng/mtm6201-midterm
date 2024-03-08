@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- RESET CSS IS BELOW HERE -->
+  <link href="css/reset.css" rel="stylesheet">
+
+  <!-- GOOGLE FONTS LINKS BELOW -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FINAL/ACTUAL CSS -->
+  <link href="css/home-css.css" rel="stylesheet">
+  <title>Midterm Homepage</title>
+  <!-- you HAVE to have rel="stylesheet" when linking CSS or it won't load. 
+      Rel tells the browser what this is and priority of loading essentially -->
+</head>
+
+<!-- NOTE HTML VALIDATED 3/6 4:30 PM -->
+
+<body>
+  <!-- SKIP LINK BELOW -->
+  <div>
+    <ul id="skipnav">
+      <li>
+        <a href="#main-content" aria-label="Skip to main content">Skip to main content</a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Homepage Header text -->
+  <div class="siteheader" role="banner">
+
+    <header>
+      <h1>Acts.Of.Life</h1>
+      <h3>Sharing made social.</h3>
+    </header>
+  
+  </div>
+
+  <!-- Homepage main content -->
+  <main id="main-content" role="main">
+
+    <div class="splashimg">
+      <picture>
+        <source media="(max-width:769px)" 
+                srcset="images/homekids-mobile-320.png, images/homekids-mobile-769.png 2x">
+        <source media="(max-width:1920px)"
+                srcset="images/homekids-dsktop-769.png, images/homekids-dsktop-1280.png 2x">
+        <img src="images/homekids-dsktop-1280.png" alt="Group photo of happy kids" width="100%">
+      </picture>
+    </div>
+
+    <!-- Button Hover is animated in CSS -->
+    <div class="homebutton">
+      <a href="login.html" aria-label="button get started">GET STARTED</a>
+
+    </div>
+  </main>
+
+</body>
+</html>
