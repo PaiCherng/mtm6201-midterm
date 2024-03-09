@@ -7,6 +7,7 @@
 #27282c
 */
 
+/* NOTE CSS VALIDATED 3/8 8PM */
 
 /* SKIPNAV */
 
@@ -178,7 +179,6 @@ hr {
 
 progress {
   accent-color: #0d65d8;
-
 }
 
 .bar {
@@ -189,7 +189,6 @@ progress {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
-  
 }
 
 .subinfo .tagline {
@@ -209,9 +208,46 @@ progress {
   font-weight: bold;
 }
 
+.scrollspace {
+  height: 11rem;
+  background-color: white;
+}
+
 /* NAVBAR STUFF STARTS HERE */
 
-.Navbar a:focus{
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navwrap {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#navbar a {
+  color: #27282c;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: #0d65d8;
+}
+
+#navbar .material-symbols-outlined {
+  padding-bottom: 10px;
+}
+
+#navbar a:focus{
   background-color: orange;
   color: black;
   font-weight:bold;
@@ -242,7 +278,5 @@ progress {
     grid-template-columns: repeat(3, auto);
     gap: 5rem;
   }
-
-
 
 }
